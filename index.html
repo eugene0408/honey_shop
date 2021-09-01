@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Honey shop</title>
+    <meta name="description" content="Honey shop" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/dist/preview.jpg" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+
+  <body style="overflow-x: hidden;">
+    <!-- ################################################################################################################################
+           ###############             PRELOADER              ####################
+    #################################################################################################################################-->
+
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="images/dist/svg/comb-full.svg" alt="#" />
+
+        <div class="preloader-line"></div>
+      </div>
+    </div>
+
+    <!-- ################################################################################################################################
+           ###############             MENU              ####################
+    #################################################################################################################################-->
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <a href="cart.html" class="navbar-brand busket-wrapper"
+                ><img
+                  class="busket"
+                  src="images/dist/svg/wicker-basket.svg"
+                  alt="кошик"
+              /></a>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                      Головна <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#catalog">каталог</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">про мед</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacts">контакти</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- ################################################################################################################################
+                   ###############      HEADER CONTENT     ####################
+        #################################################################################################################################-->
+
+      <div
+        class="header-content"
+        style="background-image: url(images/dist/main-bg.jpg)"
+      >
+        <div class="cover"></div>
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-md-6 h-100">
+              <div class="header-content__title-wrapper">
+                <div class="header-content__title">
+                  <h1>мед</h1>
+                  <p class="underline">
+                    <span class="white">карпатських</span> бджіл
+                  </p>
+                  <p class="cursive">
+                    з додаванням <span class="green">трав</span>
+                  </p>
+                  <p class="cursive">
+                    <span class="blue">ягід</span> та
+                    <span class="orange">фруктів</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="header-content__image-wrapper">
+                <img
+                  class="header-content__image"
+                  src="images/dist/header-image.png"
+                  alt="картинка мед"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <a href="#catalog" class="arrow-wrapper">
+          <img
+            class="down-arrow"
+            src="images/dist/svg/down-arrow.svg"
+            alt="вниз"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- ################################################################################################################################
+                   ############### CATALOG SECTION  ####################
+    #################################################################################################################################-->
+
+    <section class="s-catalog" id="catalog">
+      <div class="sect-header-wrapper">
+        <h2 data-aos="fade-up">Каталог</h2>
+      </div>
+
+      <div class="container">
+        <div class="row s-catalog__items">
+          <!-- ******  JS GENERATED CARDS WITH GOODS FROM JSON FILE  ******** -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################################################################################################################
+                   ###############          ABOUT SECTION              ####################
+    #################################################################################################################################-->
+
+    <section class="s-properties" id="about">
+      <div class="sect-header-wrapper">
+        <h2 data-aos="fade-up">про мед</h2>
+      </div>
+
+      <div class="s-properties__bg"></div>
+
+      <div class="bg-circle"></div>
+
+      <div class="container">
+        <div class="row sect-mt d-flex align-items-center">
+          <div class="col-12">
+            <div
+              class="s-properties__video"
+              data-aos="slide-up"
+              data-aos-duration="700"
+              data-aos-offset="300"
+            >
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/70choc0xhwA"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- #############################################
+        ############         FORM         ################# 
+      #####################################################-->
+
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="s-properties__form-wrapper">
+              <h4 class="s-properties__form-header">
+                виникли питання<span>?</span><br />
+                <span class="cursive">напишіть нам:</span>
+              </h4>
+
+              <div class="s-properties__form" id="form" data-aos="zoom-in">
+                <input class="name" placeholder="Ваше імя">
+                <input  class="email" placeholder="Ваш E-mail">
+                <textarea class="form-message " placeholder="Повідомлення" cols="30" rows="10"></textarea>
+                <div class="form-button-wrapper">
+                  <button class="form-button q-button">надіслати</button>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################################################################################################################################
+                   ###############          FOOTER SECTION              ####################
+    #################################################################################################################################-->
+
+    <footer class="footer" id="contacts">
+      <div class="footer__bg"></div>
+
+      <div class="sect-header-wrapper">
+        <h2 data-aos="fade-up">
+          <span class="white">контакти</span>
+        </h2>
+      </div>
+
+      <div class="container">
+        <div class="row mt-10">
+          <div class="col-lg-6 col-12 d-flex justify-content-center">
+            <div class="footer__map" data-aos="fade-right">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1864.4128181446072!2d23.534380546486368!3d48.63514558385818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1625139716035!5m2!1sru!2sua"
+                width="100%"
+                height="100%"
+                style="border: 1px"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <div
+            class="
+              col-lg-6 col-12
+              d-flex
+              align-items-center
+              justify-content-lg-end justify-content-center
+            "
+          >
+            <div class="footer__contacts-wrapper">
+              <h4 class="footer__contacts-header" data-aos="zoom-in">тел.</h4>
+
+              <a class="phone" href="tel:0969041587" data-aos="fade-left"
+                ><img
+                  src="images/dist/svg/phone.svg"
+                  alt="#"
+                />096<span>-</span>90<span>-</span>41<span>-</span>587</a
+              >
+              <a
+                class="phone"
+                href="tel:0667155128"
+                data-aos="fade-left"
+                data-aos-delay="100"
+                ><img
+                  src="images/dist/svg/phone.svg"
+                  alt="#"
+                />066<span>-</span>71<span>-</span>55<span>-</span>128</a
+              >
+
+              <h4 class="footer__contacts-header" data-aos="zoom-in">
+                соцмережі
+              </h4>
+
+              <div class="social">
+                <a
+                  href="#"
+                  class="fb-img"
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                >
+                  <!-- <img  src="images/dist/svg/facebook.svg" alt="facebook"> -->
+                  <svg
+                    width="10"
+                    height="19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.184 10.375l.492-3.234h-3.13V5.03c0-.914.423-1.758 1.829-1.758h1.441V.496S8.516.25 7.286.25C4.718.25 3.03 1.832 3.03 4.645V7.14H.148v3.234h2.883v7.875h3.516v-7.875h2.637z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  class="inst-img"
+                  data-aos="fade-right"
+                  data-aos-delay="300"
+                >
+                  <!-- <img  src="images/dist/svg/insta.svg" alt="instagram"> -->
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 4.809A4.942 4.942 0 005.059 9.75 4.915 4.915 0 0010 14.691a4.942 4.942 0 004.941-4.941c0-2.707-2.234-4.941-4.941-4.941zm0 8.164A3.218 3.218 0 016.777 9.75c0-1.762 1.418-3.18 3.223-3.18a3.173 3.173 0 013.18 3.18c0 1.805-1.418 3.223-3.18 3.223zm6.273-8.336c0-.645-.515-1.16-1.16-1.16-.644 0-1.16.515-1.16 1.16 0 .644.516 1.16 1.16 1.16.645 0 1.16-.516 1.16-1.16zm3.266 1.16c-.086-1.547-.43-2.922-1.547-4.04C16.875.642 15.5.298 13.953.212c-1.59-.086-6.36-.086-7.95 0-1.546.086-2.878.43-4.038 1.547C.848 2.875.504 4.25.418 5.797c-.086 1.59-.086 6.36 0 7.95.086 1.546.43 2.878 1.547 4.038 1.16 1.117 2.492 1.461 4.039 1.547 1.59.086 6.36.086 7.95 0 1.546-.086 2.921-.43 4.038-1.547 1.117-1.16 1.461-2.492 1.547-4.039.086-1.59.086-6.36 0-7.95zm-2.062 9.625c-.301.86-.989 1.504-1.805 1.848-1.29.515-4.297.386-5.672.386-1.418 0-4.426.13-5.672-.386a3.258 3.258 0 01-1.848-1.848c-.515-1.246-.386-4.254-.386-5.672 0-1.375-.13-4.383.386-5.672a3.314 3.314 0 011.848-1.805c1.246-.515 4.254-.386 5.672-.386 1.375 0 4.383-.13 5.672.386.816.301 1.46.989 1.805 1.805.515 1.29.386 4.297.386 5.672 0 1.418.13 4.426-.386 5.672z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  class="viber-img"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
+                  <!-- <img  src="images/dist/svg/viber.svg" alt="viber"> -->
+                  <svg
+                    width="20"
+                    height="21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.344 2.453c-.508-.43-2.54-1.914-6.992-1.914 0 0-5.274-.312-7.852 2.031C1.055 4.016.547 6.086.508 8.703c-.04 2.578-.117 7.461 4.57 8.79v1.991s-.039.82.508 1.016c.664.195 1.016-.43 1.64-1.094.352-.39.82-.898 1.172-1.328 3.204.274 5.665-.351 5.977-.43.625-.234 4.297-.703 4.883-5.546.625-5.04-.274-8.204-1.914-9.649zm.508 9.258c-.47 4.062-3.477 4.336-4.024 4.531-.234.04-2.383.586-5.117.43 0 0-2.031 2.422-2.656 3.086-.196.195-.43.195-.43-.235v-3.359C1.68 15.07 1.915 10.93 1.953 8.781c.04-2.187.43-3.945 1.64-5.156 2.188-1.992 6.68-1.68 6.68-1.68 3.79 0 5.586 1.172 6.016 1.524 1.406 1.21 2.11 4.062 1.563 8.242zm-5.43-3.125c-.04-1.133-.625-1.758-1.719-1.836-.351 0-.39.508-.039.508.82.078 1.211.469 1.29 1.328 0 .351.507.312.468 0zm.82.43c0 .312.508.351.508 0 .04-1.875-1.172-3.438-3.438-3.594-.351-.04-.39.469-.039.508 1.954.117 3.008 1.445 2.97 3.086zm1.836.507c-.039-3.398-2.344-5.39-5.234-5.43-.313 0-.313.509 0 .509 2.578.039 4.687 1.757 4.726 4.921 0 .352.508.352.508 0zm-.469 3.829c.196-.352.157-.665-.117-.899a9.485 9.485 0 00-1.797-1.289c-.43-.234-.86-.078-1.054.156l-.352.47c-.195.233-.547.194-.547.194-2.617-.664-3.32-3.28-3.32-3.28s0-.352.234-.548l.469-.39c.234-.196.352-.625.117-1.055a5.868 5.868 0 00-.586-.899c-.195-.312-.703-.859-.703-.859-.195-.312-.547-.351-.898-.156h-.04c-.742.39-1.562 1.21-1.288 1.992 0 0 .195.703 1.015 2.188.39.742.82 1.328 1.211 1.835.43.547 1.016 1.133 1.64 1.641 1.25.977 3.165 1.992 3.985 2.227h.04c.78.273 1.6-.547 1.991-1.29v-.038z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  class="wtsup-img"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <!-- <img  src="images/dist/svg/wts-up.svg" alt="whats-up"> -->
+                  <svg
+                    width="18"
+                    height="19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.094 3.328A8.533 8.533 0 008.96.75C4.195.75.289 4.656.289 9.422c0 1.562.43 3.047 1.172 4.336L.25 18.25l4.57-1.172c1.29.664 2.696 1.055 4.14 1.055 4.806 0 8.79-3.906 8.79-8.672 0-2.344-1.016-4.492-2.656-6.133zM8.96 16.648a7.22 7.22 0 01-3.672-1.015l-.234-.156-2.735.742.743-2.657-.196-.273a7.515 7.515 0 01-1.094-3.867c0-3.945 3.243-7.188 7.227-7.188 1.914 0 3.71.743 5.078 2.11 1.367 1.367 2.188 3.164 2.188 5.117 0 3.945-3.32 7.187-7.305 7.187zm3.984-5.39a48.326 48.326 0 00-1.484-.703c-.195-.078-.352-.117-.508.117-.117.195-.547.703-.664.86-.156.116-.273.155-.469.038-1.289-.625-2.11-1.133-2.968-2.578-.235-.39.234-.351.625-1.172.078-.156.039-.273 0-.39-.04-.117-.508-1.172-.665-1.602-.195-.43-.351-.39-.507-.39h-.39a.734.734 0 00-.587.273c-.195.234-.742.742-.742 1.797 0 1.094.742 2.11.86 2.265.117.118 1.523 2.305 3.71 3.243 1.367.625 1.914.664 2.617.546.391-.039 1.25-.507 1.446-1.015.195-.508.195-.938.117-1.016-.04-.117-.195-.156-.39-.273z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="copyright"
+        data-aos="zoom-in"
+        data-aos-offset="0"
+        data-aos-delay="100"
+      >
+        <p>&copy;2021</p>
+      </div>
+    </footer>
+
+    <!-- ################################################################################################################################
+                   ###############          TO-TOP & MINI-CART BUTTONS             ####################
+    #################################################################################################################################-->
+
+    <a href="cart.html" class="side-cart-wrapper">
+      <!-- *JS generated mini cart -->
+    </a>
+
+    <!-- Up button -->
+    <div id="to-top">
+      <div id="to-top-arrow"></div>
+    </div>
+
+    <!-- <script src="js/app.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

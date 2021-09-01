@@ -1,0 +1,191 @@
+// USER VARIABLES SECTION
+
+$accent: #FAD344 // Accent Color
+$blue: #3786E2
+$green: #4CAF50
+$dark-blue: #1A253A
+$grey-blue: #293B4E
+$fb-bg: #117DE1
+$inst-bg: #BC2A8D
+$viber-bg: #665CAC
+$wtsup-bg: #128C7E
+$red: #F44336
+$fontsize: 18px // Body Font Size
+$lineheight: 1.65 // Document Line Height
+$font: dobrozrachniy-woff2, dobrozrachniy-woff, dobrozrachniy-ttf , sans-serif // User Font Family
+$caveat: caveat-woff2, caveat-woff, caveat-ttf, sans-serif
+$roboto-condensed: RobotoCondensed-woff, RobotoCondensed-ttf, sans-serif
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$nav-fz: 21px
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' //* Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' //* Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' //* Optional Bootstrap Grid
+@import 'node_modules/bootstrap/dist/css/bootstrap.min' 
+@import 'node_modules/aos/dist/aos'
+@import 'node_modules/selectize/dist/css/selectize'
+
+
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('dobrozrachniy-woff2', normal, 400, '../fonts/Dobrozrachniy-Regular.woff2')
+@include font('dobrozrachniy-woff', normal, 400, '../fonts/Dobrozrachniy-Regular.woff')
+@include font('dobrozrachniy-ttf', normal, 400, '../fonts/Dobrozrachniy-Regular.ttf')
+@include font('dobrozrachniy-woff2', italic, 400, '../fonts/Dobrozrachniy-Oblique.woff2')
+@include font('dobrozrachniy-woff', italic, 400, '../fonts/Dobrozrachniy-Oblique.woff')
+@include font('dobrozrachniy-ttf', italic, 400, '../fonts/Dobrozrachniy-Oblique.ttf')
+@include font('caveat-woff2', normal, 400, '../fonts/caveat-regular.woff2')
+@include font('caveat-woff', normal, 400, '../fonts/caveat-regular.woff')
+@include font('caveat-ttf', normal, 400, '../fonts/caveat-regular.ttf')
+@include font('caveat-woff2', normal, 500, '../fonts/caveat-500.woff2')
+@include font('caveat-woff', normal, 500, '../fonts/caveat-500.woff')
+@include font('caveat-ttf', normal, 500, '../fonts/caveat-500.ttf')
+@include font('caveat-woff2', normal, 600, '../fonts/caveat-600.woff2')
+@include font('caveat-woff', normal, 600, '../fonts/caveat-600.woff')
+@include font('caveat-ttf', normal, 600, '../fonts/caveat-600.ttf')
+@include font('caveat-woff2', normal, 700, '../fonts/caveat-700.woff2')
+@include font('caveat-woff', normal, 700, '../fonts/caveat-700.woff')
+@include font('caveat-ttf', normal, 700, '../fonts/caveat-600.ttf')
+@include font('RobotoCondensed-woff', normal, 400, '../fonts/RobotoCondensed-Regular.woff')
+@include font('RobotoCondensed-ttf', normal, 400, '../fonts/RobotoCondensed-Regular.ttf')
+@include font('RobotoCondensed-woff', normal, 300, '../fonts/RobotoCondensed-Light.woff')
+@include font('RobotoCondensed-ttf', normal, 300, '../fonts/RobotoCondensed-Light.ttf')
+@include font('RobotoCondensed-woff', normal, 700, '../fonts/RobotoCondensed-Bold.woff')
+@include font('RobotoCondensed-ttf', normal, 700, '../fonts/RobotoCondensed-Bold.ttf')
+
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+a 
+	&:hover
+		text-decoration: none
+
+ul
+	list-style: none
+
+p 
+	margin-bottom: 0
+
+body
+	font-family: $font
+	font-size: $fontsize
+	line-height: $lineheight
+	color: #000000 !important
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+
+h1
+	font-size: 96px
+
+h2
+	font-size: 38px
+	font-family: $font
+	line-height: 1
+	text-transform: uppercase
+	font-weight: 400
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	color: #000
+	&::before
+		content: ''
+		height: 2px
+		width: 1em
+		background: $accent
+		margin-right: .5em
+		margin-top: .1em
+		display: inline-block
+		border-radius: .1em
+		transition: .3s ease
+	&::after
+		content: ''
+		height: 2px
+		width: 1em
+		background: $accent
+		margin-left: .5em
+		margin-top: .1em
+		display: inline-block
+		border-radius: .1em
+		transition: .3s ease
+	&:hover::before
+		margin-right: 1em
+	&:hover::after
+		margin-left: 1em	
+		
+
+
+		
+		
+
+h3 
+	font-size: 28px
+	background: #fff
+
+button
+	border: none
+	background: none
+
+.cover
+	background: rgba(#000, .6)
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0	
+
+
+.blue
+    color: $blue
+.green
+    color: $green
+.orange
+    color: $accent
+.white
+	color: #fff
+
+
+
+
+
+
+.h100
+	height: 100%
+.mt-10
+	margin-top: 10%
+.mb-10
+	margin-bottom: 10%
+.sect-mt
+	margin-top: 200px
+
+.mt-4em
+	margin-top: 4em

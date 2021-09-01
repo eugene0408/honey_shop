@@ -1,0 +1,67 @@
+@import _config
+@import 'blocks/**/*'
+
+
+
+.preloader-wrapper
+    position: fixed
+    top: 0 
+    left: 0
+    bottom: 0
+    right: 0
+    z-index: 9999
+    background: $dark-blue
+    display: flex
+    justify-content: center
+    align-items: center
+    .preloader
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        img
+            height: 100px
+            animation: pulse 1.5s infinite linear
+        &-line 
+            width: 200%
+            height: 7px
+            background: #fff
+            margin-top: 50px
+            position: relative  
+            display: inline-block   
+            overflow: hidden  
+            &::before
+                content: ''
+                position: absolute
+                height: 100%
+                width: 30px
+                background: $dark-blue
+                border: 1px solid #fff
+                transition: .3s ease
+                animation: load 1s infinite 
+                display: inline-block
+            
+                
+
+@keyframes pulse
+    0%
+        transform: scale(1)
+    50%
+        transform: scale(1.2)
+    100%
+        transform: scale(1)
+
+@keyframes load
+    0%
+        margin-left: 0
+    50%  
+        margin-left: 100%
+        transform: translateX(-100%)
+    100%
+        margin-left: 0
+      
+    
+
+
+    
+        

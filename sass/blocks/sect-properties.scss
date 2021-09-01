@@ -1,0 +1,156 @@
+.s-properties{
+    position: relative;
+    margin-top: 350px;
+    .bg-circle{
+        border-radius: 50%;
+        height: 1000px;
+        width: 1000px;
+        border: 2px dashed $accent;
+        position: absolute;
+        right: -150px;
+        z-index: 0;
+      
+    }
+    &__video{
+        position: relative;
+        border: 5px solid #fff;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 0 10px rgba(#000, .5);
+        transition: all .3s ease;
+        height: 500px;
+        width: 100%;
+        &:hover{
+            background: $accent;
+            border: 5px solid $accent;
+        }
+    }
+
+    &__form-wrapper{
+            width: 50%;
+            margin-top: 250px;
+        }
+        &__form-header{
+            color: #000;
+            text-align: center;
+            font-size: 30px;
+            span{
+               color: $accent;
+            }
+            .cursive{
+                font-family: $caveat;
+                font-size: 25px;
+                color: #000;
+            }
+        }
+        
+
+        &__form{
+            margin-top: 1em;
+            box-shadow: 0 0 10px rgba(#000, .3);
+            padding: 1em .5em;
+            input{
+                display: inline-block;
+                border: 1px solid rgba(#000, .1);
+                margin-top: .8em;
+                padding: 0.2em .7em;
+                font-family: $roboto-condensed;
+                width: 100%;
+                &::placeholder{
+                    font-family: $font;
+                }
+            }
+            .form-button-wrapper{
+                width: 100%;
+                text-align: center;
+                margin-top: 2em;
+            }
+            .form-button{
+                position: relative;
+                font-size: 22px;
+                display: inline-block;
+                padding: .1em 2em;
+                transition: all .2s ease-in-out;
+                background: $accent;
+                &:hover{
+                    background: $green;
+                    color: #fff;
+                }
+            } 
+            .form-message{
+                width: 100%;
+                height: 7em;
+                border: 1px solid rgba(#000, .1);
+                margin-top: .8em;
+                padding: 0.3em .7em;
+                line-height: 1.2;
+                resize: none;
+                font-family: $roboto-condensed;
+                &::placeholder{
+                    font-family: $font;
+                }
+            }
+        }
+
+}
+
+@media (max-width: 1500px){
+    .s-properties{
+        .bg-circle{
+            right: -400px
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .s-properties{
+        .bg-circle{
+            height: 900px;
+            width: 900px;
+            right: -300px
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .s-properties{
+        .bg-circle{
+
+            height: 800px;
+            width: 800px;
+            right: -300px
+        }
+        &__form-wrapper{
+            width: 60%;
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .s-properties{
+        &__video{
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .s-properties{
+        margin-top: 250px;
+        .sect-mt{
+            margin-top: 100px;
+        }
+        .bg-circle{
+            height: 600px;
+            width: 600px;
+        } 
+        &__video{
+            height: 250px;
+        }
+        &__form-wrapper{
+            width: 90%;
+        }
+
+    }
+}

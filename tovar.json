@@ -1,0 +1,46 @@
+{
+    "12301": {
+        "name": "Мед з мятою",
+        "cost": "100",
+        "image": "images/dist/jar.png",
+        "size": "0.2"
+    },
+
+    "12302": {
+        "name": "Мед з бергамотом",
+        "cost": "120",
+        "image": "images/dist/jar.png",
+        "size": "0.2"
+    },
+
+    "12303": {
+        "name": "Мед з мелісою",
+        "cost": "118",
+        "image": "images/dist/jar.png",
+        "size": "0.2"
+    },
+    "12304": {
+        "name": "Мед з лимоном",
+        "cost": "95",
+        "image": "images/dist/jar.png",
+        "size": "0.2"
+    },
+    "12305": {
+        "name": "Мед з малиною",
+        "cost": "105",
+        "image": "images/dist/jar.png",
+        "size": "0.2"
+    },
+    "12306": {
+        "name": "Мед з апельсином",
+        "cost": "165",
+        "image": "images/dist/jar.png",
+        "size": "0.4"
+    },
+    "12307": {
+        "name": "Мед з яблуком",
+        "cost": "130",
+        "image": "images/dist/jar.png",
+        "size": "0.3"
+    }
+}
