@@ -64,8 +64,8 @@ $txt .= "<b>Всього: </b>".$sum." грн";
 /* https://api.telegram.org/bot1967977598:AAEBqon3ME9bwDy8Z-e2tbi_ZEr8cnQIxsw/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
-$token = "1967977598:AAEBqon3ME9bwDy8Z-e2tbi_ZEr8cnQIxsw";
-$chat_id = "-543045312";
+$token = "XXXXXXXX";
+$chat_id = "-XXXXXXXXX";
 
 
 // ### Send message via tg bot ###
