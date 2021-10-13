@@ -61,11 +61,11 @@ $txt .= "<b>Всього: </b>".$sum." грн";
 
 // ### Telegram bot data  ###
 
-/* https://api.telegram.org/XXXXXXXXXXXXXXXXXXXXXXX/getUpdates,
- XXXXXXXXXXXXXXXXXXXXXXX - TOKEN OF TELEGRAM BOT */
-$token = "";
-// ID OF CHAT IN TELEGRAM
-$chat_id = "";
+/* https://api.telegram.org/bot1967977598:AAEBqon3ME9bwDy8Z-e2tbi_ZEr8cnQIxsw/getUpdates,
+где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
+
+$token = "1967977598:AAEBqon3ME9bwDy8Z-e2tbi_ZEr8cnQIxsw";
+$chat_id = "-543045312";
 
 
 // ### Send message via tg bot ###
@@ -73,6 +73,7 @@ $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_i
 
 // ### Check result ###
 if ($sendToTelegram) {
+  // header('Location: thanks.html');
   echo 1;
 } else {
   echo "Error";
