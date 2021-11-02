@@ -5,9 +5,9 @@ Online store
 -manipulating goods in cart  
 -sending order to telegram chat  
 -responsive design
-
+</pre>
 Live: https://carpatmed.ml
-
+<pre>
 Preview:
 </pre>
 ![](preview.gif)
@@ -20,8 +20,8 @@ Preview:
 
 
 
-        
-        
+</pre>       
+<pre>        
 Mobile Preview:  
 </pre>     
 ![](mobile-preview.gif)
