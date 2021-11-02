@@ -10,12 +10,14 @@ Live: https://carpatmed.ml
 Preview:
 ![](preview.gif)
   
-    .  
-    
-    .  
-    
-    .  
-      
+<pre>
+
+
+
+
+
+
+</pre>
         
         
 Mobile Preview:  
