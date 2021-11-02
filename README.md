@@ -8,16 +8,11 @@ Online store
 </pre>
 Live: https://carpatmed.ml
 <pre>
-<p align="center">
-Preview:
-<p>
+<p align="center">Preview:<p>
 </pre>
 ![](preview.gif)
      
 <pre>
 Mobile Preview:
-</pre>     
-<p align="center">
-</p>
- 
+ </pre>
   ![](mobile-preview.gif)
