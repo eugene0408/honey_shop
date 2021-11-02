@@ -16,4 +16,4 @@ Preview:
         
 Mobile Preview:  
      
-![](mobile-preview.gif)
+                                                 ![](mobile-preview.gif)
