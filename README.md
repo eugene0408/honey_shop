@@ -9,7 +9,6 @@ Online store
 Live: https://carpatmed.ml
 
 Preview:
-
 </pre>
 ![](preview.gif)
   
@@ -24,6 +23,5 @@ Preview:
         
         
 Mobile Preview:  
-
-<pre>     
+</pre>     
 ![](mobile-preview.gif)
