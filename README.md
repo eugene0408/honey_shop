@@ -12,7 +12,7 @@ Preview:
 </pre>
 ![](preview.gif)
      
-<pre>        
-Mobile Preview:  
+<pre>
+Mobile Preview:
 </pre>     
 ![](mobile-preview.gif)
