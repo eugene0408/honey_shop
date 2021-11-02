@@ -1,4 +1,5 @@
 # honey_shop
+<pre>
 Online store    
 -goods load from json file  
 -manipulating goods in cart  
@@ -8,6 +9,8 @@ Online store
 Live: https://carpatmed.ml
 
 Preview:
+
+</pre>
 ![](preview.gif)
   
 <pre>
@@ -17,9 +20,10 @@ Preview:
 
 
 
-</pre>
+
         
         
 Mobile Preview:  
-     
+
+<pre>     
 ![](mobile-preview.gif)
