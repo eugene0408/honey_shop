@@ -15,4 +15,6 @@ Preview:
 <pre>
 Mobile Preview:
 </pre>     
+<p align="center">
 ![](mobile-preview.gif)
+<p>
