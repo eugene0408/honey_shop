@@ -11,16 +11,7 @@ Live: https://carpatmed.ml
 Preview:
 </pre>
 ![](preview.gif)
-  
-<pre>
-
-
-
-
-
-
-
-</pre>       
+     
 <pre>        
 Mobile Preview:  
 </pre>     
