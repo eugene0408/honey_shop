@@ -6,7 +6,7 @@ Online store
 -sending order to telegram chat  
 -responsive design
 </pre>
-Live: https://carpatmed.ml
+Live: https://eugene0408.github.io/honey_shop/
 <pre>
 Preview:
 </pre>
